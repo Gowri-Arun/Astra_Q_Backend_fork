@@ -2,21 +2,21 @@ import os
 import json
 import numpy as np
 from sentence_transformers import SentenceTransformer
-from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.schema import Document
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.vectorstores import FAISS as LC_FAISS
-from langchain.chains import ConversationalRetrievalChain
-from langchain.chat_models import ChatOpenAI
-from langchain.memory import ConversationBufferMemory
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_core.documents import Document
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_community.vectorstores import FAISS as LC_FAISS
+from langchain_classic.chains import ConversationalRetrievalChain
+from langchain_openai import ChatOpenAI
+from langchain_classic.memory import ConversationBufferMemory
 from tqdm import tqdm
-from langchain.vectorstores import FAISS as LC_FAISS
-from langchain.schema import Document
+from langchain_community.vectorstores import FAISS as LC_FAISS
+from langchain_core.documents import Document
 import time
 
 
-json_folder = r"static_pipeline/output/docs_parsed"
-faiss_folder = "faiss_store"
+json_folder = r"../static_pipeline/output/docs_parsed"
+faiss_folder = "../faiss_store"
 embedding_model_name = "sentence-transformers/all-MiniLM-L6-v2"
 
 if not os.path.exists(json_folder):
