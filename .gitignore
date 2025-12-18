@@ -211,6 +211,9 @@ __marimo__/
 
 # ASTRA-Q Specific Output Folders
 static_pipeline/output/
+mosdac-scraper/data/
+mosdac-scraper/scripts/data
+mosdac-scraper/logs
 
 # Crawl & parse logs
 *.log
@@ -229,3 +232,4 @@ test_*.py
 config.yaml
 *.env
 .env.*
+mosdac-scraper/logs/no_cards_20251207_203407.png
