@@ -19,22 +19,41 @@ METADATA_REPORT_PATH = os.path.join(
 )
 
 # Map raw parameter strings from metadata_report to normalized KG parameters
+# Now includes a human-readable display_name as 4th element
 PARAM_MAP = {
-    "Rainfall": ("rainfall", "atmosphere", "mm/hr"),
-    "Ocean": ("ocean_variable", "ocean", None),
-    "Water": ("water_variable", "hydrology", None),
-    "Cloud": ("cloud", "atmosphere", None),
-    "Soil Moisture": ("soil_moisture", "land", None),
+    "Rainfall": ("rainfall", "atmosphere", "mm/hr", "Rainfall"),
+    "Ocean": ("ocean_variable", "ocean", None, "Ocean parameters"),
+    "Water": ("water_variable", "hydrology", None, "Water-related parameters"),
+    "Cloud": ("cloud", "atmosphere", None, "Cloud-related parameters"),
+    "Soil Moisture": ("soil_moisture", "land", None, "Soil moisture"),
 }
+
+
+def make_product_display_name(product_id: str) -> str:
+    """
+    Turn a long JSON filename into a nicer display name.
+    Example:
+      Oceansat-3_Introduction_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json
+      -> Oceansat-3 Introduction
+    """
+    base = product_id.replace(".json", "")
+    base = base.replace(
+        "_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre", ""
+    )
+    # Keep first 2–3 segments (satellite + short label), then join
+    parts = base.split("_")
+    if len(parts) > 3:
+        parts = parts[:3]
+    return " ".join(parts)
 
 
 def parse_metadata_report(path: str):
     """
     Parse metadata_report.txt into:
       - satellites: dict name -> {id, name}
-      - parameters: dict norm_name -> {id, type, category, unit}
+      - parameters: dict norm_name -> {id, type, category, unit, display_name}
       - regions: dict name -> {id, name, type}
-      - products: list of {id, name, satellite, parameter, region}
+      - products: list of {id, name, display_name, satellite, parameter, region}
     """
     satellites = {}
     parameters = {}
@@ -49,6 +68,7 @@ def parse_metadata_report(path: str):
             line = line.strip()
             if not line or "FOUND ->" not in line:
                 continue
+
             # Split: "<filename>.json: FOUND -> { ... }"
             left, right = line.split("FOUND ->", 1)
             product_id = left.split(".json")[0].strip() + ".json"
@@ -70,7 +90,8 @@ def parse_metadata_report(path: str):
             # Build product record
             products.append({
                 "id": product_id,
-                "name": product_id,   # you can replace with prettier name later
+                "name": product_id,  # technical id
+                "display_name": make_product_display_name(product_id),
                 "satellite": sat_name,
                 "parameter": param_raw,
                 "region": region_name,
@@ -84,11 +105,16 @@ def parse_metadata_report(path: str):
                         "name": sat_name,
                     }
 
-            # Parameters
+            # Parameters (normalized + display_name)
             if param_raw:
-                norm, cat, unit = PARAM_MAP.get(
+                norm, cat, unit, disp = PARAM_MAP.get(
                     param_raw,
-                    (param_raw.lower().replace(" ", "_"), None, None),
+                    (
+                        param_raw.lower().replace(" ", "_"),
+                        None,
+                        None,
+                        param_raw,
+                    ),
                 )
                 if norm not in parameters:
                     parameters[norm] = {
@@ -96,6 +122,7 @@ def parse_metadata_report(path: str):
                         "type": norm,
                         "category": cat,
                         "unit": unit,
+                        "display_name": disp,
                     }
 
             # Regions
@@ -104,8 +131,7 @@ def parse_metadata_report(path: str):
                     regions[region_name] = {
                         "id": region_name.lower().replace(" ", "-"),
                         "name": region_name,
-                        "type": "country",   # simple default
-                        # optional bounds could be added later
+                        "type": "country",  # simple default
                     }
 
     return satellites, parameters, regions, products
@@ -121,10 +147,6 @@ class EnhancedNeo4jPopulator:
         )
 
         # Store in instance attributes
-        # satellites: dict name -> {id, name}
-        # parameters: dict norm_name -> {id, type, category, unit}
-        # regions: dict name -> {id, name, type}
-        # products: list of {id, name, satellite, parameter, region}
         self.satellites = satellites
         self.parameters = parameters
         self.regions = regions
@@ -164,17 +186,17 @@ class EnhancedNeo4jPopulator:
 
             # 1) Parameters
             print("📊 Creating parameters...")
-            for param_key, param_info in self.parameters.items():
+            for _, param_info in self.parameters.items():
                 self._create_parameter(session, param_info)
 
             # 2) Regions
             print("\n🗺️  Creating regions...")
-            for region_name, region_info in self.regions.items():
+            for _, region_info in self.regions.items():
                 self._create_region(session, region_info)
 
             # 3) Satellites
             print("\n🛰️  Creating satellites...")
-            for sat_name, sat_data in self.satellites.items():
+            for _, sat_data in self.satellites.items():
                 self._create_satellite(session, sat_data)
 
             # 4) Products + relationships
@@ -185,9 +207,9 @@ class EnhancedNeo4jPopulator:
                 # Product -> Parameter
                 param_raw = product.get("parameter")
                 if param_raw:
-                    norm, _, _ = PARAM_MAP.get(
+                    norm, _, _, _ = PARAM_MAP.get(
                         param_raw,
-                        (param_raw.lower().replace(" ", "_"), None, None),
+                        (param_raw.lower().replace(" ", "_"), None, None, param_raw),
                     )
                     if norm in self.parameters:
                         self._link_product_to_parameter(
@@ -216,7 +238,7 @@ class EnhancedNeo4jPopulator:
 
             print("\n✅ Population complete!")
 
-    # === CREATE HELPERS (simplified) ===
+    # === CREATE HELPERS ===
 
     def _create_satellite(self, session, sat_data):
         query = """
@@ -230,7 +252,8 @@ class EnhancedNeo4jPopulator:
         MERGE (par:Parameter {id: $id})
         SET par.type = $type,
             par.category = $category,
-            par.unit = $unit
+            par.unit = $unit,
+            par.display_name = $display_name
         """
         session.run(
             query,
@@ -238,6 +261,7 @@ class EnhancedNeo4jPopulator:
             type=param_info["type"],
             category=param_info["category"],
             unit=param_info["unit"],
+            display_name=param_info.get("display_name", param_info["type"]),
         )
 
     def _create_region(self, session, region_info):
@@ -256,12 +280,14 @@ class EnhancedNeo4jPopulator:
     def _create_product(self, session, product):
         query = """
         MERGE (p:Product {id: $id})
-        SET p.name = $name
+        SET p.name = $name,
+            p.display_name = $display_name
         """
         session.run(
             query,
             id=product["id"],
             name=product["name"],
+            display_name=product.get("display_name", product["name"]),
         )
 
     # === RELATION HELPERS (ontology-specific) ===
@@ -345,7 +371,6 @@ def main():
     except Exception as e:
         print(f"❌ Error: {e}")
         import traceback
-
         traceback.print_exc()
     finally:
         populator.close()
