@@ -1,0 +1,301 @@
+# === DATA PRODUCTS ===
+
+
+# === SATELLITE / PRODUCT DOC PAGES ===
+
+
+Global_Ocean_Surface_Current_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Ocean', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Ocean', 'region': 'India'}, 'keywords': ['Global', 'Ocean', 'Surface', 'Current']}
+
+
+High_Resolution_Sea_Surface_Salinity_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['High', 'Resolution', 'Sea', 'Surface', 'Salinity']}
+
+
+Inland_Water_Height_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Water', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Water', 'region': 'India'}, 'keywords': ['Inland', 'Water', 'Height']}
+
+
+INSAT-3A_Introduction_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3A', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3A', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Introduction', 'keywords': ['INSAT', '3A', 'Introduction']}
+
+
+INSAT-3A_Objectives_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3A', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3A', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Objectives', 'keywords': ['INSAT', '3A', 'Objectives']}
+
+
+INSAT-3A_Payloads_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3A', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3A', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Payloads', 'keywords': ['INSAT', '3A', 'Payloads']}
+
+
+INSAT-3A_SpaceCraft_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3A', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3A', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'SpaceCraft', 'keywords': ['INSAT', '3A', 'SpaceCraft']}
+
+
+INSAT-3D_Introduction_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3D', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3D', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Introduction', 'keywords': ['INSAT', '3D', 'Introduction']}
+
+
+INSAT-3D_Objectives_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3D', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3D', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Objectives', 'keywords': ['INSAT', '3D', 'Objectives']}
+
+
+INSAT-3D_Payloads_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3D', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3D', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Payloads', 'keywords': ['INSAT', '3D', 'Payloads']}
+
+
+INSAT-3D_References_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3D', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3D', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'References', 'keywords': ['INSAT', '3D', 'References']}
+
+
+INSAT-3D_SpaceCraft_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3D', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3D', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'SpaceCraft', 'keywords': ['INSAT', '3D', 'SpaceCraft']}
+
+
+INSAT-3DR_Introduction_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Introduction', 'keywords': ['INSAT', '3DR', 'Introduction']}
+
+
+INSAT-3DR_Objectives_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Objectives', 'keywords': ['INSAT', '3DR', 'Objectives']}
+
+
+INSAT-3DR_Payloads_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Payloads', 'keywords': ['INSAT', '3DR', 'Payloads']}
+
+
+INSAT-3DR_References_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'References', 'keywords': ['INSAT', '3DR', 'References']}
+
+
+INSAT-3DR_SpaceCraft_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'SpaceCraft', 'keywords': ['INSAT', '3DR', 'SpaceCraft']}
+
+
+INSAT-3DS_Introduction_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Introduction', 'keywords': ['INSAT', '3DS', 'Introduction']}
+
+
+INSAT-3DS_Objectives_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Objectives', 'keywords': ['INSAT', '3DS', 'Objectives']}
+
+
+INSAT-3DS_Payloads_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Payloads', 'keywords': ['INSAT', '3DS', 'Payloads']}
+
+
+INSAT-3DS_References_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'References', 'keywords': ['INSAT', '3DS', 'References']}
+
+
+INSAT-3DS_SpaceCraft_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'SpaceCraft', 'keywords': ['INSAT', '3DS', 'SpaceCraft']}
+
+
+KALPANA-1_Introduction_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Kalpana-1', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Kalpana-1', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Introduction', 'keywords': ['KALPANA', '1', 'Introduction']}
+
+
+KALPANA-1_Objectives_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Kalpana-1', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Kalpana-1', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Objectives', 'keywords': ['KALPANA', '1', 'Objectives']}
+
+
+KALPANA-1_Payloads_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Kalpana-1', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Kalpana-1', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Payloads', 'keywords': ['KALPANA', '1', 'Payloads']}
+
+
+KALPANA-1_SpaceCraft_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Kalpana-1', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Kalpana-1', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'SpaceCraft', 'keywords': ['KALPANA', '1', 'SpaceCraft']}
+
+
+Megha_Tropiques_Introduction_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Megha-Tropiques', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Megha-Tropiques', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Introduction', 'keywords': ['Megha', 'Tropiques', 'Introduction']}
+
+
+Megha_Tropiques_Objectives_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Megha-Tropiques', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Megha-Tropiques', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Objectives', 'keywords': ['Megha', 'Tropiques', 'Objectives']}
+
+
+Megha_Tropiques_Payloads_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Megha-Tropiques', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Megha-Tropiques', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Payloads', 'keywords': ['Megha', 'Tropiques', 'Payloads']}
+
+
+Megha_Tropiques_References_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Megha-Tropiques', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Megha-Tropiques', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'References', 'keywords': ['Megha', 'Tropiques', 'References']}
+
+
+Megha_Tropiques_SpaceCraft_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Megha-Tropiques', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Megha-Tropiques', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'SpaceCraft', 'keywords': ['Megha', 'Tropiques', 'SpaceCraft']}
+
+
+METEOSAT8_Cloud_Properties_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Cloud', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Cloud', 'region': 'India'}, 'keywords': ['METEOSAT8', 'Cloud', 'Properties']}
+
+
+Ocean_Subsurface_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Ocean', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Ocean', 'region': 'India'}, 'keywords': ['Ocean', 'Subsurface']}
+
+
+OCEANSAT-2_Introduction_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Oceansat-2', 'parameter': 'Ocean', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Oceansat-2', 'parameter': 'Ocean', 'region': 'India'}, 'doc_section': 'Introduction', 'keywords': ['OCEANSAT', '2', 'Introduction']}
+
+
+Oceansat-2_Objectives_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Oceansat-2', 'parameter': 'Ocean', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Oceansat-2', 'parameter': 'Ocean', 'region': 'India'}, 'doc_section': 'Objectives', 'keywords': ['Oceansat', '2', 'Objectives']}
+
+
+Oceansat-2_Payloads_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Oceansat-2', 'parameter': 'Ocean', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Oceansat-2', 'parameter': 'Ocean', 'region': 'India'}, 'doc_section': 'Payloads', 'keywords': ['Oceansat', '2', 'Payloads']}
+
+
+Oceansat-2_References_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Oceansat-2', 'parameter': 'Ocean', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Oceansat-2', 'parameter': 'Ocean', 'region': 'India'}, 'doc_section': 'References', 'keywords': ['Oceansat', '2', 'References']}
+
+
+Oceansat-2_SpaceCraft_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Oceansat-2', 'parameter': 'Ocean', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Oceansat-2', 'parameter': 'Ocean', 'region': 'India'}, 'doc_section': 'SpaceCraft', 'keywords': ['Oceansat', '2', 'SpaceCraft']}
+
+
+Oceansat-3_Introduction_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Oceansat-3', 'parameter': 'Ocean', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Oceansat-3', 'parameter': 'Ocean', 'region': 'India'}, 'doc_section': 'Introduction', 'keywords': ['Oceansat', '3', 'Introduction']}
+
+
+OCEANSAT-3_Objectives_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Oceansat-3', 'parameter': 'Ocean', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Oceansat-3', 'parameter': 'Ocean', 'region': 'India'}, 'doc_section': 'Objectives', 'keywords': ['OCEANSAT', '3', 'Objectives']}
+
+
+OCEANSAT-3_Payloads_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Oceansat-3', 'parameter': 'Ocean', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Oceansat-3', 'parameter': 'Ocean', 'region': 'India'}, 'doc_section': 'Payloads', 'keywords': ['OCEANSAT', '3', 'Payloads']}
+
+
+OCEANSAT-3_References_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Ocean', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Ocean', 'region': 'India'}, 'doc_section': 'References', 'keywords': ['OCEANSAT', '3', 'References']}
+
+
+OCEANSAT-3_SpaceCraft_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Oceansat-3', 'parameter': 'Ocean', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Oceansat-3', 'parameter': 'Ocean', 'region': 'India'}, 'doc_section': 'SpaceCraft', 'keywords': ['OCEANSAT', '3', 'SpaceCraft']}
+
+
+SARAL-AltiKa_Introduction_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'SARAL', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'SARAL', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Introduction', 'keywords': ['SARAL', 'AltiKa', 'Introduction']}
+
+
+SARAL-AltiKa_Objectives_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'SARAL', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'SARAL', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Objectives', 'keywords': ['SARAL', 'AltiKa', 'Objectives']}
+
+
+SARAL-AltiKa_Payloads_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'SARAL', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'SARAL', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Payloads', 'keywords': ['SARAL', 'AltiKa', 'Payloads']}
+
+
+SARAL-AltiKa_SpaceCraft_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'SARAL', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'SARAL', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'SpaceCraft', 'keywords': ['SARAL', 'AltiKa', 'SpaceCraft']}
+
+
+SARAL_References_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'SARAL', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'SARAL', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'References', 'keywords': ['SARAL', 'References']}
+
+
+SCATSAT-1_Introduction_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Scatsat-1', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Scatsat-1', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Introduction', 'keywords': ['SCATSAT', '1', 'Introduction']}
+
+
+SCATSAT-1_Objectives_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Scatsat-1', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Scatsat-1', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Objectives', 'keywords': ['SCATSAT', '1', 'Objectives']}
+
+
+SCATSAT-1_Payloads_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Scatsat-1', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Scatsat-1', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'Payloads', 'keywords': ['SCATSAT', '1', 'Payloads']}
+
+
+SCATSAT-1_References_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Scatsat-1', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Scatsat-1', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'References', 'keywords': ['SCATSAT', '1', 'References']}
+
+
+SCATSAT-1_SpaceCraft_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'Scatsat-1', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'Scatsat-1', 'parameter': 'Rainfall', 'region': 'India'}, 'doc_section': 'SpaceCraft', 'keywords': ['SCATSAT', '1', 'SpaceCraft']}
+
+
+Soil_Moisture_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Soil Moisture', 'region': 'India', 'product_type': 'doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Soil Moisture', 'region': 'India'}, 'keywords': ['Soil', 'Moisture']}
+
+
+# === GENERIC SITE PAGES (NO SAT/PRODUCT METADATA) ===
+
+
+About_Us_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'site_doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['About', 'Us']}
+
+
+Contact_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'site_doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['Contact']}
+
+
+Copyright_Policy_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'site_doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['Copyright', 'Policy']}
+
+
+Data_Access_Policy_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'site_doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['Access', 'Policy']}
+
+
+Data_Quality_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'site_doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['Quality']}
+
+
+Help_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'site_doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['Help']}
+
+
+Hyperlink_Policy_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'site_doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['Hyperlink', 'Policy']}
+
+
+MOSDAC_Feedback_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'site_doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['MOSDAC', 'Feedback']}
+
+
+Privacy_Policy_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'site_doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['Privacy', 'Policy']}
+
+
+RSS_Feed_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'site_doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['RSS', 'Feed']}
+
+
+Terms_and_Conditions_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'site_doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['Terms', 'Conditions']}
+
+
+Website_Policies_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: FOUND -> {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'site_doc', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['Website', 'Policies']}
+
+
+# === OTHERS / UNCLASSIFIED ===
+
+
+3D_Volumetric_TERLS_DWRproduct_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['3D', 'Volumetric', 'TERLS', 'DWRproduct']}
+
+
+Atlases_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['Atlases']}
+
+
+Bayesian_based_MT-SAPHIR_rainfall_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['Bayesian', 'based', 'MT', 'SAPHIR', 'rainfall']}
+
+
+GPS_derived_Integrated_water_vapour_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'INSAT-3DR', 'parameter': 'Water', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Water', 'region': 'India'}, 'keywords': ['GPS', 'derived', 'Integrated', 'water', 'vapour']}
+
+
+GSMap_ISRO_Rain_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['GSMap', 'ISRO', 'Rain']}
+
+
+In-situ_Catalog.json: {'satellite': None, 'parameter': None, 'region': None, 'product_type': 'other', 'keywords': ['In', 'situ', 'Catalog']}
+
+
+Indian_Mainland_Coastal_Product_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['Indian', 'Mainland', 'Coastal', 'Product']}
+
+
+INSAT-3A_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'INSAT-3A', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'INSAT-3A', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['INSAT', '3A']}
+
+
+INSAT-3D_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'INSAT-3D', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'INSAT-3D', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['INSAT', '3D']}
+
+
+INSAT-3DR_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['INSAT', '3DR']}
+
+
+INSAT-3DS_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'INSAT-3D', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'INSAT-3D', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['INSAT', '3DS']}
+
+
+Insitu_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['Insitu']}
+
+
+KALPANA-1_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'Kalpana-1', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'Kalpana-1', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['KALPANA', '1']}
+
+
+Megha_Tropiques_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'Megha-Tropiques', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'Megha-Tropiques', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['Megha', 'Tropiques']}
+
+
+Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}}
+
+
+Oceanic_Eddies_Detection_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'INSAT-3DR', 'parameter': 'Ocean', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Ocean', 'region': 'India'}, 'keywords': ['Oceanic', 'Eddies', 'Detection']}
+
+
+Oceansat-2_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'Oceansat-2', 'parameter': 'Ocean', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'Oceansat-2', 'parameter': 'Ocean', 'region': 'India'}, 'keywords': ['Oceansat', '2']}
+
+
+OCEANSAT-3_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'Oceansat-3', 'parameter': 'Ocean', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'Oceansat-3', 'parameter': 'Ocean', 'region': 'India'}, 'keywords': ['OCEANSAT', '3']}
+
+
+Radar_Catalog.json: {'satellite': None, 'parameter': None, 'region': None, 'product_type': 'other', 'keywords': ['Radar', 'Catalog']}
+
+
+Relative_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['Relative']}
+
+
+River_Discharge_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['River', 'Discharge']}
+
+
+SARAL-AltiKa_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'SARAL', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'SARAL', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['SARAL', 'AltiKa']}
+
+
+Satellite_Catalog.json: {'satellite': 'Scatsat-1', 'parameter': None, 'region': None, 'product_type': 'other', 'original_metadata': {'satellite': 'Scatsat-1', 'parameter': None, 'region': None}, 'keywords': ['Catalog']}
+
+
+SCATSAT-1_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'Scatsat-1', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'Scatsat-1', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['SCATSAT', '1']}
+
+
+Sea_Ice_Occurrence_Probability_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['Sea', 'Ice', 'Occurrence', 'Probability']}
+
+
+Validation_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['Validation']}
+
+
+Wave_based_Renewable_Energy_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['Wave', 'based', 'Renewable', 'Energy']}
+
+
+Weather_Meteorological_and_Oceanographic_Satellite_Data_Archival_Centre.json: {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India', 'product_type': 'other', 'original_metadata': {'satellite': 'INSAT-3DR', 'parameter': 'Rainfall', 'region': 'India'}, 'keywords': ['Weather']}
+
+
+
+=== Summary ===
+Files with ALL NULL metadata: 2
+Files with some metadata: 92
+Files with no metadata field: 0
+Files with errors: 0
+Total JSON files scanned: 94

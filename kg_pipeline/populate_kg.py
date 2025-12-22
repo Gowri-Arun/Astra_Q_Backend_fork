@@ -1,6 +1,6 @@
 """
 kg_pipeline/populate_kg_enhanced.py
-Enhanced Knowledge Graph Population from metadata_report.txt
+Enhanced Knowledge Graph Population from metadata_report-2.txt
 """
 
 import os
@@ -12,10 +12,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Path to your metadata_report.txt (adjust if needed)
+# Path to your metadata_report-2.txt (adjust if needed)
 METADATA_REPORT_PATH = os.path.join(
     os.path.dirname(__file__),
-    "metadata_report.txt"
+    "metadata_report-2.txt",
 )
 
 # Map raw parameter strings from metadata_report to normalized KG parameters
@@ -49,11 +49,19 @@ def make_product_display_name(product_id: str) -> str:
 
 def parse_metadata_report(path: str):
     """
-    Parse metadata_report.txt into:
+    Parse metadata_report-2.txt into:
       - satellites: dict name -> {id, name}
       - parameters: dict norm_name -> {id, type, category, unit, display_name}
       - regions: dict name -> {id, name, type}
-      - products: list of {id, name, display_name, satellite, parameter, region}
+      - products: list of {
+            id, name, display_name,
+            satellite, parameter, region,
+            product_type, section, doc_section, keywords
+        }
+
+    Notes:
+    - product_type can be: "data", "doc", "site_doc", "other".
+    - section is a high-level bucket: "data", "doc_pages", "site_pages", "other".
     """
     satellites = {}
     parameters = {}
@@ -63,13 +71,32 @@ def parse_metadata_report(path: str):
     if not os.path.exists(path):
         raise FileNotFoundError(f"metadata_report.txt not found at: {path}")
 
+    current_section = None  # "data", "doc_pages", "site_pages", "other"
+
     with open(path, "r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if not line or "FOUND ->" not in line:
+        for raw_line in f:
+            line = raw_line.strip()
+            if not line:
                 continue
 
-            # Split: "<filename>.json: FOUND -> { ... }"
+            # Track which section we're in
+            if line.startswith("=== DATA PRODUCTS"):
+                current_section = "data"
+                continue
+            if line.startswith("=== SATELLITE / PRODUCT DOC PAGES"):
+                current_section = "doc_pages"
+                continue
+            if line.startswith("=== GENERIC SITE PAGES"):
+                current_section = "site_pages"
+                continue
+            if line.startswith("=== OTHERS / UNCLASSIFIED"):
+                current_section = "other"
+                continue
+
+            # Lines of interest look like: "<filename>.json: FOUND -> { ... }"
+            if "FOUND ->" not in line:
+                continue
+
             left, right = line.split("FOUND ->", 1)
             product_id = left.split(".json")[0].strip() + ".json"
 
@@ -86,16 +113,25 @@ def parse_metadata_report(path: str):
             sat_name = meta.get("satellite")
             param_raw = meta.get("parameter")
             region_name = meta.get("region")
+            product_type = meta.get("product_type")  # "data", "doc", "site_doc", "other"
+            doc_section = meta.get("doc_section")    # e.g., "Introduction", "Payloads"
+            keywords = meta.get("keywords")          # list of strings
 
             # Build product record
-            products.append({
-                "id": product_id,
-                "name": product_id,  # technical id
-                "display_name": make_product_display_name(product_id),
-                "satellite": sat_name,
-                "parameter": param_raw,
-                "region": region_name,
-            })
+            products.append(
+                {
+                    "id": product_id,
+                    "name": product_id,  # technical id
+                    "display_name": make_product_display_name(product_id),
+                    "satellite": sat_name,
+                    "parameter": param_raw,
+                    "region": region_name,
+                    "product_type": product_type,
+                    "section": current_section,
+                    "doc_section": doc_section,
+                    "keywords": keywords or [],
+                }
+            )
 
             # Satellites
             if sat_name:
@@ -141,7 +177,7 @@ class EnhancedNeo4jPopulator:
     def __init__(self, uri, user, password):
         self.driver = GraphDatabase.driver(uri, auth=(user, password))
 
-        # Load satellites, parameters, regions, products from metadata_report.txt
+        # Load satellites, parameters, regions, products from metadata_report-2.txt
         satellites, parameters, regions, products = parse_metadata_report(
             METADATA_REPORT_PATH
         )
@@ -182,7 +218,7 @@ class EnhancedNeo4jPopulator:
     def populate_all(self):
         """Main method to populate entire knowledge graph"""
         with self.driver.session() as session:
-            print("\n🚀 Starting population from metadata_report.txt...\n")
+            print("\n🚀 Starting population from metadata_report-2.txt...\n")
 
             # 1) Parameters
             print("📊 Creating parameters...")
@@ -202,6 +238,10 @@ class EnhancedNeo4jPopulator:
             # 4) Products + relationships
             print("\n📦 Creating products and relationships...")
             for product in self.products:
+                # If you want to only treat "real" data products as Product nodes for KG queries,
+                # you can use this filter:
+                # if product.get("product_type") != "data":
+                #     continue
                 self._create_product(session, product)
 
                 # Product -> Parameter
@@ -281,13 +321,21 @@ class EnhancedNeo4jPopulator:
         query = """
         MERGE (p:Product {id: $id})
         SET p.name = $name,
-            p.display_name = $display_name
+            p.display_name = $display_name,
+            p.product_type = $product_type,
+            p.section = $section,
+            p.doc_section = $doc_section,
+            p.keywords = $keywords
         """
         session.run(
             query,
             id=product["id"],
             name=product["name"],
             display_name=product.get("display_name", product["name"]),
+            product_type=product.get("product_type"),
+            section=product.get("section"),
+            doc_section=product.get("doc_section"),
+            keywords=product.get("keywords", []),
         )
 
     # === RELATION HELPERS (ontology-specific) ===
@@ -371,6 +419,7 @@ def main():
     except Exception as e:
         print(f"❌ Error: {e}")
         import traceback
+
         traceback.print_exc()
     finally:
         populator.close()
