@@ -1,12 +1,11 @@
 """
-kg_pipeline/populate_kg_enhanced.py
+kg_pipeline/populate_kg.py
 Enhanced Knowledge Graph Population from metadata_report.txt
 """
 
 import os
 import re
 import ast
-from collections import defaultdict
 from neo4j import GraphDatabase
 from dotenv import load_dotenv
 
@@ -378,3 +377,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+# Backward‑compat alias for older scripts
+Neo4jPopulator = EnhancedNeo4jPopulator

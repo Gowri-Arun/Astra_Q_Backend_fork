@@ -1,3 +1,6 @@
+# Phase‑3 prototype script for building FAISS index.
+# Phase‑5 production index builder lives in rag/build_vector_index.py.
+
 import os
 import json
 import numpy as np
